@@ -7,7 +7,15 @@ class TestStudent(unittest.TestCase):
         student = Student("John", "Doe")
         self.assertEqual(student.full_name, "John Doe")
 
+    def test_email(self):
+        student = Student('john', 'Doe')
+
+    def test_alert_santa(self):
+        student = Student('john', 'Doe')
+        student.alert_santa()
+
+        self.assertTrue(student.naughty_list)
+
 
 if __name__ == "__main__":
     unittest.main()
-    
